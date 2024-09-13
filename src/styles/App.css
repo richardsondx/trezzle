@@ -10,12 +10,7 @@ a {
   color: #ff0000; /* Red links */
 }
 
-.container {
-  max-width: 800px;
-}
-
 .container, .today-challenge, .how-to-play-container {
-  border: 1px solid #ffffff; /* White borders */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -106,6 +101,7 @@ a {
 .speech-bubble {
   position: relative;
   background: #fff;
+  color: #121212;
   border-radius: .4em;
   padding: 10px;
   display: inline-block;
