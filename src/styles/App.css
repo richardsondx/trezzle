@@ -134,6 +134,7 @@ a {
 .clues h3 {
   text-decoration: none; /* Remove underline */
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .clues ol {

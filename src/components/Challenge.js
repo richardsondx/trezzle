@@ -373,11 +373,11 @@ function Challenge({ challengeNumberProp }) {
     <div className="today-challenge">
       <h2>{`Challenge No. ${challengeNumber}`}</h2>
       <div className="difficulty">Difficulty Level: <strong>{difficulty}</strong></div>
-      <div className="clues text-center">
-        <h3>🗺️ Clues:</h3>
+      <div className="clues text-center mt-2">
+        <h3>🗺️ Clues</h3>
         <ol className="list-unstyled">
           {currentChallenge.clues.map((clue, index) => (
-            <li key={index}>{clue}</li>
+            <li key={index}>✦ {clue}</li>
           ))}
         </ol>
       </div>
@@ -409,8 +409,9 @@ function Challenge({ challengeNumberProp }) {
       </div>
       <button className="btn btn-primary mt-2" onClick={handleSubmit} disabled={gameEnded}>Submit Answer</button>
       <div className="tries">
+        <br/>
         {Array(triesLeft).fill('🟩').map((box, index) => (
-          <span key={index}>{box}</span>
+          <span className="me-2" key={index}>{box}</span>
         ))}
       </div>
       {guessHistory.length > 0 && (
