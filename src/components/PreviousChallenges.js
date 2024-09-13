@@ -33,7 +33,7 @@ function PreviousChallenges() {
   );
 
   return (
-    <div className="container">
+    <div className="container col-lg-8 col-12">
       <h2>Previous Challenges</h2>
       <input
         type="number"
@@ -50,7 +50,7 @@ function PreviousChallenges() {
                 {challenge.date} – No. {challenge.number}
               </div>
               <div className="col-md-4 text-right">
-                <Link to={`/challenge/${challenge.number}`} className="btn btn-primary btn-sm mr-2">
+                <Link to={`/challenge/${challenge.number}`} className="btn btn-primary btn-sm me-2">
                   Take this Challenge
                 </Link>
                 <button className="btn btn-secondary btn-sm" onClick={() => showAnswer(challenge.number)}>

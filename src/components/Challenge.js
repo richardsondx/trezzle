@@ -317,7 +317,7 @@ function Challenge({ challengeNumberProp }) {
 
       const directionHint = getDirectionHint(userAnswer);
       if (newTriesLeft > 0) {
-        setMessage(`Incorrect. ${directionHint} Tries left: ${newTriesLeft}`);
+        setMessage(`Arrr! Wrong, mate! ${directionHint} Tries left: ${newTriesLeft}`);
       } else {
         setMessage(`Out of tries! The answer was ${currentChallenge.answer}.`);
         setGameEnded(true);
@@ -418,7 +418,7 @@ function Challenge({ challengeNumberProp }) {
           <h4>Your Guesses:</h4>
           <ul>
             {guessHistory.map((guess, index) => (
-              <li key={index}>{guess}</li>
+              <li className="guess-value" key={index}>{guess}</li>
             ))}
           </ul>
         </div>
@@ -426,15 +426,16 @@ function Challenge({ challengeNumberProp }) {
       <div className="message">
         {message && (
           <div className="speech-bubble">
-            🐦‍🔥 {message}
+            {message}
           </div>
         )}
       </div>
+      <span style={{fontSize: '30px'}}>🦜</span>
       {gameEnded && (
         <div>
           <p>Try the next challenge tomorrow at midnight EST!</p>
-          <button className="btn btn-secondary" onClick={copyResult}>Share Your Result</button>
-          <button className="btn btn-secondary ml-2" onClick={shareChallenge}>Share This Challenge</button>
+          <button className="btn btn-secondary me-2" onClick={copyResult}>Share Your Result</button>
+          <button className="btn btn-secondary" onClick={shareChallenge}>Share This Challenge</button>
         </div>
       )}
     </div>
