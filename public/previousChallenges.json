@@ -1,0 +1,194 @@
+[
+  {
+    "number": 1,
+    "date": "2024-09-01",
+    "challenge": {
+      "level": "Easy",
+      "answer": "New York",
+      "clues": [
+        "Head towards 74.0° west.",
+        "Your treasure lies in the temperate zones.",
+        "You'll pass by 2 neighboring lands on your journey.",
+        "Hoist the flag with colors of red, white, and blue.",
+        "The local tongue traces back to the English language family."
+      ],
+      "fact": "The tresor is located in the city of New York in the United States."
+    }
+  },
+  {
+    "number": 2,
+    "date": "2024-09-02",
+    "challenge": {
+      "level": "Easy",
+      "answer": "Tokyo",
+      "clues": [
+        "Sail to the 35.7° north.",
+        "Your treasure lies in the far east.",
+        "You'll pass by 1 neighboring land on your journey.",
+        "Hoist the flag with colors of white and red.",
+        "The local tongue traces back to the Japanese language family."
+      ],
+      "fact": "The tresor is located in the city of Tokyo in Japan."
+    }
+  },
+  {
+    "number": 3,
+    "date": "2024-09-03",
+    "challenge": {
+      "level": "Easy",
+      "answer": "London",
+      "clues": [
+        "Head towards 0.1° west.",
+        "Your treasure lies in the temperate zones.",
+        "You'll pass by 1 neighboring land on your journey.",
+        "Hoist the flag with colors of red and white.",
+        "The local tongue traces back to the English language family."
+      ],
+      "fact": "The tresor is located in the city of London in the United Kingdom."
+    }
+  },
+  {
+    "number": 4,
+    "date": "2024-09-04",
+    "challenge": {
+      "level": "Medium",
+      "answer": "Sydney",
+      "clues": [
+        "Sail to the 33.9° south.",
+        "Your treasure lies in the far east.",
+        "You'll pass by no neighboring lands on your journey.",
+        "Hoist the flag with colors of red, white, and blue.",
+        "The local tongue traces back to the English language family."
+      ],
+      "fact": "The tresor is located in the city of Sydney in Australia."
+    }
+  },
+  {
+    "number": 5,
+    "date": "2024-09-05",
+    "challenge": {
+      "level": "Medium",
+      "answer": "Cairo",
+      "clues": [
+        "Sail to the 30.0° north.",
+        "Your treasure lies in the temperate zones.",
+        "You'll pass by 4 neighboring lands on your journey.",
+        "Hoist the flag with colors of red, white, black, and gold.",
+        "The local tongue traces back to the Arabic language family."
+      ],
+      "fact": "The tresor is located in the city of Cairo in Egypt."
+    }
+  },
+  {
+    "number": 6,
+    "date": "2024-09-06",
+    "challenge": {
+      "level": "Medium",
+      "answer": "São Paulo",
+      "clues": [
+        "Sail to the 23.5° south.",
+        "Your treasure lies in the southern realms.",
+        "You'll pass by 10 neighboring lands on your journey.",
+        "Hoist the flag with colors of green, yellow, and blue.",
+        "The local tongue traces back to the Portuguese language family."
+      ],
+      "fact": "The tresor is located in the city of São Paulo in Brazil."
+    }
+  },
+  {
+    "number": 7,
+    "date": "2024-09-07",
+    "challenge": {
+      "level": "Hard",
+      "answer": "Reykjavik",
+      "clues": [
+        "Sail to the 64.1° north.",
+        "Your treasure lies in the cold northern realms.",
+        "You'll pass by no neighboring lands on your journey.",
+        "Hoist the flag with colors of red, white, and blue.",
+        "The local tongue traces back to the Icelandic language family."
+      ],
+      "fact": "The tresor is located in the city of Reykjavik in Iceland."
+    }
+  },
+  {
+    "number": 8,
+    "date": "2024-09-08",
+    "challenge": {
+      "level": "Hard",
+      "answer": "Kathmandu",
+      "clues": [
+        "Sail to the 27.7° north.",
+        "Your treasure lies in the temperate zones.",
+        "You'll pass by 2 neighboring lands on your journey.",
+        "Hoist the flag with colors of red, blue, and white.",
+        "The local tongue traces back to the Nepali language family."
+      ],
+      "fact": "The tresor is located in the city of Kathmandu in Nepal."
+    }
+  },
+  {
+    "number": 9,
+    "date": "2024-09-09",
+    "challenge": {
+      "level": "Hard",
+      "answer": "Lagos",
+      "clues": [
+        "Sail to the 6.5° north.",
+        "Your treasure lies near the equator.",
+        "You'll pass by 4 neighboring lands on your journey.",
+        "Hoist the flag with colors of green and white.",
+        "The local tongue traces back to the Yoruba language family."
+      ],
+      "fact": "The tresor is located in the city of Lagos in Nigeria."
+    }
+  },
+  {
+    "number": 10,
+    "date": "2024-09-10",
+    "challenge": {
+      "level": "Medium",
+      "answer": "Hanoi",
+      "clues": [
+        "Sail to the 21.0° north.",
+        "Your treasure lies in the far east.",
+        "You'll pass by 3 neighboring lands on your journey.",
+        "Hoist the flag with colors of red and yellow.",
+        "The local tongue traces back to the Vietnamese language family."
+      ],
+      "fact": "The tresor is located in the city of Hanoi in Vietnam."
+    }
+  },
+  {
+    "number": 11,
+    "date": "2024-09-11",
+    "challenge": {
+      "level": "Medium",
+      "answer": "Toronto",
+      "clues": [
+        "Sail to the 43.7° north.",
+        "Your treasure lies in the temperate zones.",
+        "You'll pass by 1 neighboring land on your journey.",
+        "Hoist the flag with colors of red and white.",
+        "The local tongue traces back to the English and French language families."
+      ],
+      "fact": "The tresor is located in the city of Toronto in Canada."
+    }
+  },
+  {
+    "number": 12,
+    "date": "2024-09-12",
+    "challenge": {
+      "level": "Hard",
+      "answer": "Ulaanbaatar",
+      "clues": [
+        "Sail to the 47.9° north.",
+        "Your treasure lies in the cold northern realms.",
+        "You'll pass by 2 neighboring lands on your journey.",
+        "Hoist the flag with colors of red, blue, and gold.",
+        "The local tongue traces back to the Mongolian language family."
+      ],
+      "fact": "The tresor is located in the city of Ulaanbaatar in Mongolia."
+    }
+  }
+]

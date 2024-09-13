@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #ff0000; /* Red links */
+}
+
+.container {
+  max-width: 800px;
+}
+
+.container, .today-challenge, .how-to-play-container {
+  border: 1px solid #ffffff; /* White borders */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.navbar {
+  margin: 0 20px; /* Add margin to navbar */
+}
+
+
+.navbar-brand {
+  margin-left: 20px; /* Space left of the logo */
+  font-size: 1.5em;
+}
+
+.navbar-nav {
+  margin-right: 20px; /* Space right of the navbar */
+}
+
+.today-challenge {
+  padding: 20px;
+  text-align: center;
+}
+
+.clues {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.clues h3 {
+  text-decoration: underline;
+}
+
+.answer-boxes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.answer-boxes input {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.answer-boxes .letter-input {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.answer-boxes .non-letter {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.tries {
+  margin-bottom: 20px;
+}
+
+.tries span {
+  font-size: 2em;
+}
+
+.message {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #fff;
+  border-radius: .4em;
+  padding: 10px;
+  display: inline-block;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+  margin-left: -15px;
+  margin-bottom: -15px;
+}
+
+.how-to-play-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #333; /* Contrasting background */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+.clues h3 {
+  text-decoration: none; /* Remove underline */
+  margin-bottom: 20px;
+}
+
+.clues ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.guess-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.guess-history li {
+  color: #ffffff; /* Ensure text is visible */
+}
