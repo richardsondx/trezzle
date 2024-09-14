@@ -2,35 +2,40 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { supabase } from '../supabaseClient';
 
 function PreviousChallenges() {
   const [challenges, setChallenges] = useState([]);
   const [searchNumber, setSearchNumber] = useState('');
-  const [challengeData, setChallengeData] = useState([]);
 
   useEffect(() => {
-    fetch('/previousChallenges.json')
-      .then(response => response.json())
-      .then(data => {
-        setChallengeData(data);
-        setChallenges(data);
-      });
+    fetchChallenges();
   }, []);
 
-  function showAnswer(challengeNumber) {
-    const challenge = challengeData.find(challenge => challenge.number === challengeNumber);
-    if (challenge) {
-      console.log("challenge: " + JSON.stringify(challenge))
-      console.log(challenge.answer)
-      alert(`Answer for challenge No. ${challengeNumber} is ${challenge.challenge.answer}`);
+  async function fetchChallenges() {
+    const today = new Date().toISOString().split('T')[0];
+    const { data, error } = await supabase
+      .from('challenges')
+      .select('*')
+      .lt('date', today) // Fetch challenges where date is less than today
+      .order('id', { ascending: true });
+  
+    if (error) {
+      console.error('Error fetching challenges:', error);
     } else {
-      alert('Challenge data not available.');
+      setChallenges(data);
     }
   }
 
+  function showAnswer(challenge) {
+    alert(`Answer for challenge No. ${challenge.id} is ${challenge.answer}`);
+  }
+
   const filteredChallenges = challenges.filter(challenge =>
-    challenge.number.toString().includes(searchNumber)
+    challenge.id.toString().includes(searchNumber)
   );
+
+  const today = new Date().toISOString().split('T')[0];
 
   return (
     <div className="container col-lg-8 col-12">
@@ -44,18 +49,20 @@ function PreviousChallenges() {
       />
       <ul className="list-group">
         {filteredChallenges.slice().reverse().map((challenge) => (
-          <li key={challenge.number} className="list-group-item mb-2">
+          <li key={challenge.id} className="list-group-item mb-2">
             <div className="row">
               <div className="col-md-8">
-                {challenge.date} – No. {challenge.number}
+                {challenge.date} – No. {challenge.id}
               </div>
               <div className="col-md-4 text-right">
-                <Link to={`/challenge/${challenge.number}`} className="btn btn-primary btn-sm me-2">
+                <Link to={`/challenge/${challenge.id}`} className="btn btn-primary btn-sm me-2">
                   Take this Challenge
                 </Link>
-                <button className="btn btn-secondary btn-sm" onClick={() => showAnswer(challenge.number)}>
-                  Show Answer
-                </button>
+                {challenge.date !== today && (
+                  <button className="btn btn-secondary btn-sm" onClick={() => showAnswer(challenge)}>
+                    Show Answer
+                  </button>
+                )}
               </div>
             </div>
           </li>

@@ -7,6 +7,7 @@ import TodayChallenge from './components/TodayChallenge';
 import PreviousChallenges from './components/PreviousChallenges';
 import HowToPlay from './components/HowToPlay';
 import Challenge from './components/Challenge';
+import ChallengeRandom from './components/ChallengeRandom';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/challenge/:number" element={<Challenge />} />
         <Route path="/previous" element={<PreviousChallenges />} />
         <Route path="/how-to-play" element={<HowToPlay />} />
+        <Route path="/challenge/random" component={ChallengeRandom} />
       </Routes>
     </Router>
   );
